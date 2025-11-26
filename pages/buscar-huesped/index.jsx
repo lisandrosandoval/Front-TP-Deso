@@ -14,6 +14,7 @@ export default function BuscarHuesped() {
   const [orden, setOrden] = useState("asc");
 
   const manejarOrdenamiento = (columna) => {
+    setSeleccionado(null);
     if (columnaSeleccionada !== columna) {
       setColumnaSeleccionada(columna);
       setOrden("asc");
